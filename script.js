@@ -54,7 +54,7 @@ function downloadFiles() {
             type: "blob"
           })
           .then(function (content) {
-            a.download = user_name;
+            a.download = user_name+".zip";
             var myURL = window.URL || window.webkitURL
             a.href = myURL.createObjectURL(content);
             a.innerHTML = "Download";
